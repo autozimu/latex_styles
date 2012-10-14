@@ -1,0 +1,20 @@
+\ifx \mytitle \undefined
+    \newcommand{\mytitle}{Title}
+\fi
+
+\ifx \myauthor \undefined
+    \newcommand{\myauthor}{Junfeng Li <li424@mcmaster>}
+\fi
+
+\ifx \mydate \undefined
+    \newcommand{\mydate}{\today}
+\fi
+
+\title{\mytitle{}}
+\author{\myauthor{}}
+\date{\mydate{}}
+\input{hmwk-setup}
+
+
+\begin{document}
+\maketitle
