@@ -1,0 +1,35 @@
+% PACKAGES
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, epsfig, xspace}
+\usepackage{pstricks,pst-node}
+\usepackage[normal,tight,center]{subfigure}
+\usepackage{beamerthemesplit}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{color}
+
+
+\hypersetup{
+    backref=true, %permet d'ajouter des liens dans...
+        hyperindex=true, %ajoute des liens dans les index.
+        colorlinks=true, %colorise les liens
+        breaklinks=true, %permet le retour à la ligne dans les liens trop longs
+        urlcolor= blue, %couleur des hyperliens
+        linkcolor= blue, %couleur des liens internes
+        bookmarks=true, %créé des signets pour Acrobat
+        bookmarksopen=true, %si les signets Acrobat sont créés,
+        %les afficher complètement.
+            pdftitle={}, %informations apparaissant dans
+            pdfauthor={Remy Leone}, %dans les informations du document
+            pdfsubject={} %sous Acrobat.
+}
+
+\AtBeginSection[]{
+    \begin{frame}{}
+    \small \tableofcontents[currentsection, hideothersubsections]
+        \end{frame}
+}
