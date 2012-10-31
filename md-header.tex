@@ -1,6 +1,26 @@
-% File: md-header.tex
+% File: md-begin.tex
 % Author: Junfeng Li <li424@mcmaster.ca>
 % Description: partial file used by mmd2pdf
 % Created: October 14, 2012
 
-\documentclass[]{article}
+\documentclass{article}
+
+\ifx \mytitle \undefined
+    \newcommand{\mytitle}{Title}
+\fi
+
+\ifx \myauthor \undefined
+    \newcommand{\myauthor}{Junfeng Li <li424@mcmaster.ca>}
+\fi
+
+\ifx \mydate \undefined
+    \newcommand{\mydate}{\today}
+\fi
+
+\title{\mytitle}
+\author{\myauthor}
+\date{\mydate}
+\input{hmwk-setup}
+
+\begin{document}
+\maketitle
