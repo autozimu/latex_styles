@@ -7,6 +7,8 @@
 \setlength\parindent{0in}
 
 % TYPOGRAPHY
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{beramono}
 \usepackage{libertine}
 
 % Disable Section Numbering
@@ -15,11 +17,30 @@
 % MATH
 \usepackage{amsmath,amsfonts,amsthm} % Math packages
 
-% LISTING
-\usepackage{listings}
 
 % COLORS
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+
+% LISTING
+\definecolor{bluekeywords}{rgb}{0.13,0.13,1}
+\definecolor{greencomments}{rgb}{0,0.5,0}
+\definecolor{redstrings}{rgb}{0.9,0,0}
+
+\usepackage{listings}
+
+\lstset{,
+    language=C,
+    showspaces=false,
+    showtabs=false,
+    breaklines=true,
+    showstringspaces=false,
+    breakatwhitespace=true,
+    escapeinside={(*@}{@*)},
+    commentstyle=\color{greencomments},
+    keywordstyle=\color{bluekeywords}\bfseries,
+    stringstyle=\color{redstrings},
+    basicstyle=\ttfamily
+}
 
 % GRAPHICX
 \usepackage{graphicx}
