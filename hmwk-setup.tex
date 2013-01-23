@@ -4,25 +4,19 @@
 % Created: October 14, 2012
 
 % LAYOUT
-\usepackage{geometry}
-\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
 \setlength\parindent{0in}
 
 % TYPOGRAPHY
-\usepackage{fontspec}
-\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
-\setromanfont [BoldFont={Gentium Basic Bold}, ItalicFont={Gentium Basic Italic}]{Gentium Basic}
-%\setmonofont[Scale=0.8]{Monaco}
-% ---- CUSTOM AMPERSAND
-\newcommand{\amper}{{\fontspec[Scale=.95]{Gentium Basic Italic}\selectfont\itshape\&}}
-% ---- MARGIN YEARS
-\newcommand{\years}[1]{\marginpar{\footnotesize #1}}
+\usepackage{libertine}
 
 % Disable Section Numbering
 \setcounter{secnumdepth}{-1}
 
 % MATH
 \usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+% LISTING
+\usepackage{listings}
 
 % COLORS
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
