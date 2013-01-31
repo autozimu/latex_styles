@@ -7,24 +7,25 @@
 \setlength\parindent{0in}
 
 % TYPOGRAPHY
+% font encoding
 \usepackage[T1]{fontenc}
+% main font: linux libertine
 \usepackage{libertine}
-\usepackage[scaled]{beramono}
+% monospace font: Bitstream Vera
+\setmonofont[Scale=0.83]{Bitstream Vera Sans Mono}
 
 % Disable Section Numbering
 \setcounter{secnumdepth}{-1}
 
-% Eliminate list spacing
+% Eliminate itemize spacing
 \usepackage{enumitem}
 \setlist{nolistsep}
 
 % MATH
 \usepackage{amsmath,amsfonts,amsthm} % Math packages
 
-\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
-
 % Code/Source Listings
-\usepackage[]{minted}
+\usepackage{minted}
 
 % GRAPHICX
 \usepackage{graphicx}
@@ -32,18 +33,8 @@
 % Hyperref
 \usepackage{hyperref}
 \hypersetup{,
-    bookmarks=true,          % show bookmarks bar?
-    unicode=true,            % non-Latin characters in Acrobat’s bookmarks
-    pdftoolbar=true,         % show Acrobat’s toolbar?
-    pdfmenubar=true,         % show Acrobat’s menu?
-    pdffitwindow=false,      % window fit to page when opened
-    pdfstartview={FitH},     % fits the width of the page to the window
-    pdftitle={\title{}},     % title
-    pdfauthor={\author{}},   % author
     pdfcreator={XelaTeX},    % creator of the document
-    pdfproducer={\author{}}, % producer of the document
-    pdfnewwindow=false,      % links in new window
-    colorlinks=true,         % false: boxed links; true: colored links
+    colorlinks=true,         % colored links
     linkcolor=BrickRed,      % color of internal links
     citecolor=OliveGreen,    % color of links to bibliography
     filecolor=magenta,       % color of file links
