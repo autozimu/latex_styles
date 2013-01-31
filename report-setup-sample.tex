@@ -1,0 +1,44 @@
+\documentclass{article}
+\input{report-setup}
+\title{Sample Report}
+\author{Junfeng Li \ li424@mcmaster.ca}
+\date{Jan 30, 2013}
+\begin{document}
+\maketitle
+
+\section{Features}
+
+\subsection{Fonts}
+roman: \textrm{Roman} \\
+sans serif: \textsf{Sans Serif} \\
+typewriter: \texttt{Typewriter} \\
+Small Caps: \textsc{Small Caps} \\
+bold face: \textbf{Bold Face} \\
+medium weight: \textmd{Medium Weight} \\
+italic: \textit{Italic} \\
+slanted: \textsl{Slanted} \\
+
+\subsection{Itermize}
+\begin{itemize}
+\item item 1
+\item item 2
+\item item 3
+\end{itemize}
+
+\subsection{Code/Source}
+\begin{minted}[mathescape,
+               linenos,
+               numbersep=5pt,
+               gobble=2,
+               frame=lines,
+               framesep=2mm]{csharp}
+  string title = "This is a Unicode π in the sky"
+  /*
+  Defined as $\pi=\lim_{n\to\infty}\frac{P_n}{d}$ where $P$ is the perimeter
+  of an $n$-sided regular polygon circumscribing a
+  circle of diameter $d$.
+  */
+  const double pi = 3.1415926535
+\end{minted}
+
+\end{document}
