@@ -26,14 +26,20 @@
 \setlist{nolistsep}
 
 % Math
-\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{amsmath,amsfonts,amsthm}
 
 % Table
 \usepackage{booktabs}
 \usepackage{tabulary}
 
+% Color
+% Add more options to xcolor package. The package itself will be loaded
+% by minted package.
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
 % Code/Source Listings
 \usepackage{minted}
+
 
 % GRAPHICX
 \usepackage{graphicx}
