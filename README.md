@@ -1,1 +1,1 @@
-LaTeX styling files
+LaTeX styles
