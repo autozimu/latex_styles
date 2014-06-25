@@ -6,7 +6,7 @@
 \begin{document}
 \maketitle
 
-\subsection{Fonts}
+\section{Fonts}
 
 roman: \textrm{Roman} \\
 sans serif: \textsf{Sans Serif} \\
@@ -17,28 +17,36 @@ medium weight: \textmd{Medium Weight} \\
 italic: \textit{Italic} \\
 slanted: \textsl{Slanted} \\
 
-\subsection{Itermize}
+\section{Math}
+
+\begin{equation}
+x^2 + y^2 = z^2
+\end{equation}
+
+\section{Itermize}
 
 \begin{itemize}
 \item item 1
 \item item 2
 \end{itemize}
 
-\subsection{Code/Source}
+\section{Code}
 
-\begin{minted}[mathescape,
-               linenos,
-               numbersep=5pt,
-               gobble=2,
-               frame=lines,
-               framesep=2mm]{csharp}
-string title = "This is a Unicode π in the sky"
-/*
-Defined as $\pi=\lim_{n\to\infty}\frac{P_n}{d}$ where $P$ is the perimeter
-of an $n$-sided regular polygon circumscribing a
-circle of diameter $d$.
-*/
-const double pi = 3.1415926535
+Inline code: \mint{python}`import this` HAHA
+
+Display Code:
+
+\begin{minted}{ruby}
+class Foo
+  def init
+    pi = Math::PI
+    @var = "Pi is approx. #{pi}" end
+  end
+end
 \end{minted}
+
+Standalone files:
+
+\inputminted{python}{code-example.py}
 
 \end{document}

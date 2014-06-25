@@ -1,17 +1,17 @@
 % File: report-setup.tex
 % Author: Junfeng Li <li424@mcmaster.ca>
-% Description: LaTeX styling for report
+% Description: LaTeX styling for a simple report
 
-% LAYOUT
-\setlength\parindent{0in}
-\setlength{\parskip}{1em}
-
-% TYPOGRAPHY
+%% font
 % main font: linux libertine
 \usepackage[mono=false]{libertine}
 \usepackage{fontspec}
 % monospace font: menlo
 \setmonofont{Menlo}
+
+% layout
+\setlength\parindent{0in}
+\setlength{\parskip}{1em}
 
 % Disable Section Numbering
 %\setcounter{secnumdepth}{-1}
@@ -24,29 +24,28 @@
 \usepackage{enumitem}
 \setlist{nolistsep}
 
-% Math
+% math
 \usepackage{amsmath,amsfonts,amsthm}
 
-% Table
+% table
 \usepackage{booktabs}
 \usepackage{tabulary}
 \usepackage{ctable}
 \usepackage{longtable}
 
-% Color
+% color
 % Add more options to xcolor package. The package itself will be loaded
 % by minted package.
 \PassOptionsToPackage{dvipsnames}{xcolor}
 
-% Code/Source Listings
+% code
 \usepackage{minted}
-\usemintedstyle{emacs}
 
-% GRAPHICX
+% gRAPHICX
 \usepackage{graphicx}
 \usepackage{subcaption}
 
-% Hyperref
+% hyperref
 \usepackage{hyperref}
 \hypersetup{,
     pdfcreator={XelaTeX},    % creator of the document
