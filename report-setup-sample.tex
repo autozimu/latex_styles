@@ -1,5 +1,6 @@
 \documentclass{article}
 \input{report-setup}
+\usepackage[math]{blindtext}
 \title{Sample Report}
 \author{Junfeng Li \\ li424@mcmaster.ca}
 \date{\today}
@@ -17,18 +18,18 @@ medium weight: \textmd{Medium Weight} \\
 italic: \textit{Italic} \\
 slanted: \textsl{Slanted} \\
 
+\blindmathtrue
+\blindtext
+
 \section{Math}
 
-\begin{equation}
-x^2 + y^2 = z^2
-\end{equation}
+\blindmathpaper
 
 \section{Itermize}
 
-\begin{itemize}
-\item item 1
-\item item 2
-\end{itemize}
+\blinditemize
+\blindenumerate
+\blinddescription
 
 \section{Code}
 
